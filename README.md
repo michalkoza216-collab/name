@@ -17,15 +17,36 @@ A Python-based tool that uses AI to analyze product variants and propose better,
 
 ## Installation
 
-1. Clone this repository:
+### Option 1: Install as a Package (Recommended)
+
 ```bash
+# Clone the repository
 git clone https://github.com/michalkoza216-collab/name.git
 cd name
+
+# Install the package
+pip install -e .
 ```
 
-2. Install dependencies:
+After installation, you can run the tool from anywhere:
 ```bash
+variant-renamer path/to/your/products.csv
+```
+
+### Option 2: Install Dependencies Only
+
+```bash
+# Clone the repository
+git clone https://github.com/michalkoza216-collab/name.git
+cd name
+
+# Install dependencies
 pip install -r requirements.txt
+```
+
+Then run the tool with:
+```bash
+python variant_renamer.py path/to/your/products.csv
 ```
 
 3. Set up your OpenAI API key:
